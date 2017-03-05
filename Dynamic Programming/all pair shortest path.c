@@ -12,10 +12,15 @@ void push (int s[],int *tos,int ele)
 	s[*tos]=ele;
 }
 
-void path(int u,int v,int d[][100],int c[][100],int s[],int *tos)
+void path(int u,int v,int d[][100],int c[][100],int f[][100]int s[],int *tos)
 {
 	int a,z;
 	a=v;
+	if(f[i][j]>998)
+	{
+		printf("no path present\n");
+		return;
+	}
 	while(a!=-1)
 	{
 		z=a;
@@ -91,7 +96,7 @@ int main()
  tos=-1;
  printf("Enter vertices to find path length\n");
  scanf("%d %d", &r, &w);
- path(r,w,d,c,s,&tos);
+ path(r,w,d,c,a,s,&tos);
  push(s,&tos,r);
  for(i=tos;i>=0;i--)
  {
