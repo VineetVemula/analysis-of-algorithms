@@ -12,7 +12,7 @@ void push (int s[],int *tos,int ele)
 	s[*tos]=ele;
 }
 
-void path(int u,int v,int d[][100],int c[][100],int f[][100]int s[],int *tos)
+void path(int u,int v,int d[][100],int c[][100],int f[][100],int s[],int *tos)
 {
 	int a,z;
 	a=v;
@@ -27,7 +27,7 @@ void path(int u,int v,int d[][100],int c[][100],int f[][100]int s[],int *tos)
 		a=d[u][a];
 		if(c[a][z]==999)
 		{
-			path(a,z,d,c,s,tos);
+			path(a,z,d,c,f,s,tos);
 		}
 		if(a!=-1&&c[a][z]!=999)
 		{
