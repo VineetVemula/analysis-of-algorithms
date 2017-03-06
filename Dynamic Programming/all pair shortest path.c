@@ -16,7 +16,7 @@ void path(int u,int v,int d[][100],int c[][100],int f[][100],int s[],int *tos)
 {
 	int a,z;
 	a=v;
-	if(f[i][j]>998)
+	if(f[u][v]>998)
 	{
 		printf("no path present\n");
 		return;
