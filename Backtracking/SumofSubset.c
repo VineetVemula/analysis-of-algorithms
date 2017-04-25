@@ -18,7 +18,7 @@ void sumofsub(int s, int k, int r)
   display(x);
  else if(s+w[k]+w[k+1]<=M)
   sumofsub(s+w[k],k+1,r-w[k]);
- if(s+r-w[k]>=M && s+w[k]<=M)
+ if(s+r-w[k]>=M && s+w[k+1]<=M)
  {
   x[k]=0;
   sumofsub(s,k+1,r-w[k]);
