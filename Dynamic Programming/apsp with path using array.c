@@ -1,7 +1,3 @@
-
-// NOT SURE IF HIDDEN PATHS WILL BE FOUND//
-
-
 #include<stdio.h>
 
 int a[100][100],c[100][100],d[100][100];
